@@ -1,0 +1,65 @@
+header {
+  color: #00003D;
+}
+
+.login-form {
+  background-color: #00003D;
+  width: 25vw;
+  height: 30vw;
+  margin: auto;
+  margin-top: 5vw;
+  
+}
+
+
+input[type=text] {
+  font-family: "GE Inspira", sans-serif;
+  font-size: 20px;
+  width: 20vw;
+  height: 2.5vw;
+  background-color: #E6E6EC;
+  border-style: none;
+  border-radius: 6px;
+  padding-left: 8px;
+  color: #333;
+  align-items: center;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  margin-top: 1vw;
+}
+
+input[type=text]:focus {
+  background-color: #F6F6FC;
+  color: black;
+  border-style: none !important;
+}
+
+::placeholder {
+  color: #8F8F90;
+}
+
+input[type=submit] {
+  border: none;
+  color: white;
+  background-color: #00003D;
+  font-family: "GE Inspira", sans-serif;
+  font-size: 20px;
+  border: solid;
+  border-width: 3px;
+  border-color: white;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color: #00003D;
+}
+
+.login-button {
+  width: 5.5vw;
+  height: 2.5vw;
+  border-radius: 1.75vw;
+  margin-left: 9.75vw;
+  margin-right: 9.75vw;
+  margin-top: 1vw;
+}
