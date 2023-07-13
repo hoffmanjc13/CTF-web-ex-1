@@ -41,7 +41,7 @@ input[type=text]:focus {
 input[type=submit] {
   border: none;
   color: white;
-  background-color: #00003D;
+  background-color: transparent;
   font-family: "GE Inspira", sans-serif;
   font-size: 20px;
   border: solid;
@@ -62,4 +62,17 @@ input[type=submit]:hover {
   margin-left: 9.75vw;
   margin-right: 9.75vw;
   margin-top: 1vw;
+}
+
+a {
+  font-family: "GE Inspira", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #4181FF;
+  margin: auto;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #88BBFF
 }
