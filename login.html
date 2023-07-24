@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+  <title>Test CTF Challenge</title>
+  <link rel = "stylesheet"
+    type = "text/css"
+    href = "stylesheet.css" />
+</head>
+
+<body>
+	<header id='header' style="background-color: #3a416f">
+	<div id='logo' itemscope itemtype='https://schema.org/Organization'>
+	    <img class='logoimg' src='icon.png' alt='Haha' width="60" height="60" />
+	</div>
+  </header>
+
+	<script>
+		function login_insecure() {
+			let username = document.getElementById("usr").value;
+			let password = document.getElementById("pwd").value;
+			if (username === "HamseyTheHammy" && password === "s0rb3t") {
+				window.location.href = "login.html";
+			} else {
+				var hidd = document.getElementById("hidden");
+				hidd.style.display = "block";
+			}
+
+		}
+	</script>
+
+	<div class="login-form">
+		<h1>Login Sucess!</h1>
+        	<h2>Flag: "Found the secret"</h2>
+		<h2>f119_lead_the_fleet_data.xlsx</h2>
+		<h2>f135_coatings.docx</h2>
+		<h2>ge9x_combustor_drawing.png</h2>
+		<h2>v2500_compressor_vane.sldprt</h2>
+		<h2>v2500_turbine.sldasm</h2>
+    	</div>
+
+	<footer id='footer' style="background-color: #10a3a2>
+		<p>Made by Julia Hoffman | . All rights reserved.</p>
+	</footer>
+	
+</body>

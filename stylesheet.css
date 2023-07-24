@@ -1,9 +1,13 @@
 header {
-  color: #00003D;
-}
+    color: #3a416f;
+    position:fixed;
+    left:0px;
+    top:0px;
+    width:100%;
+  }
 
 .login-form {
-  background-color: #00003D;
+  background-color: #5d83c0;
   width: 25vw;
   height: 30vw;
   margin: auto;
@@ -14,13 +18,13 @@ header {
 input[type=text], input[type=password], select {
   font-family: "GE Inspira", sans-serif;
   font-size: 20px;
-  background-color: #E6E6EC;
+  background-color: #F6F6FC;
   border-style: none;
   color: #333;
 }
 
 input[type=text]:focus , input[type=password]:focus, select:focus {
-  background-color: #F6F6FC;
+  background-color: white;
   color: black;
   border-style: none !important;
 }
@@ -70,7 +74,7 @@ a {
   font-family: "GE Inspira", sans-serif;
   font-size: 20px;
   text-decoration: none;
-  color: #4181FF;
+  color: white;
   margin: auto;
 }
 
@@ -88,7 +92,7 @@ label {
 }
 
 .secq-form {
-  background-color: #00003D;
+  background-color: #5d83c0;
   width: 45vw;
   height: 30vw;
   margin: auto;
@@ -109,7 +113,7 @@ label {
 }
 
 footer {
-  background-color: #4181FF;
+  background-color: #10a3a2;
   padding: 32px 0;
   text-align: center;
   font-family: "GE Inspira", sans-serif;
@@ -119,3 +123,18 @@ footer {
   bottom:0px;
   width:100%;
 }
+
+  
+h1 {
+    color: white;
+    margin: auto;
+    font-family: "GE Inspira", sans-serif;
+    font-size: 28px;
+  }
+
+h2 {
+    color: white;
+    margin: auto;
+    font-family: "GE Inspira", sans-serif;
+    font-size: 20px;
+  }
