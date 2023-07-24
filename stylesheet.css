@@ -11,24 +11,15 @@ header {
   
 }
 
-
-input[type=text] {
+input[type=text], input[type=password], select {
   font-family: "GE Inspira", sans-serif;
   font-size: 20px;
-  width: 20vw;
-  height: 2.5vw;
   background-color: #E6E6EC;
   border-style: none;
-  border-radius: 6px;
-  padding-left: 8px;
   color: #333;
-  align-items: center;
-  margin-left: 2.5vw;
-  margin-right: 2.5vw;
-  margin-top: 1vw;
 }
 
-input[type=text]:focus {
+input[type=text]:focus , input[type=password]:focus, select:focus {
   background-color: #F6F6FC;
   color: black;
   border-style: none !important;
@@ -36,6 +27,17 @@ input[type=text]:focus {
 
 ::placeholder {
   color: #8F8F90;
+}
+
+.login-field {
+  width: 20vw;
+  height: 2.5vw;
+  border-radius: 6px;
+  padding-left: 8px;
+  align-items: center;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  margin-top: 1vw;
 }
 
 input[type=submit] {
@@ -74,5 +76,46 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #88BBFF
+  color: #88BBFF;
+}
+
+label {
+  width: 100%;
+  float: left;
+  color: #FFFFFF;
+  font-family: "GE Inspira", sans-serif;
+  font-size: 20px; 
+}
+
+.secq-form {
+  background-color: #00003D;
+  width: 45vw;
+  height: 30vw;
+  margin: auto;
+  margin-top: 5vw;
+}
+
+.secq-line {
+  width: max-content;
+  position: relative;
+  margin: auto;
+}
+
+.seq-field {
+  height: 2.5vw;
+  border-radius: 6px;
+  padding-left: 8px;
+  margin: .5vw;
+}
+
+footer {
+  background-color: #4181FF;
+  padding: 32px 0;
+  text-align: center;
+  font-family: "GE Inspira", sans-serif;
+  font-size: 20px;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
 }
