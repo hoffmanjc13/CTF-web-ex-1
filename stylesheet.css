@@ -99,7 +99,9 @@ label {
 .secq-form {
   background-color: #5d83c0;
   width: 45vw;
-  height: 30vw;
+  min-width: 40em;
+  height: calc(70vh - 120px);
+  min-height: 30em;
   margin: auto;
   margin-top: calc(60px + 4vh);
 }
@@ -130,10 +132,10 @@ label {
 }
 
 .seq-field {
-  height: 2.5vw;
+  height: 2.2em;
   border-radius: 6px;
   padding-left: 8px;
-  margin: .5vw;
+  margin: 1vh .5vw;
   border: 1px solid white;
 }
 
@@ -147,8 +149,8 @@ label {
 
 .secq-button {
   width: 7vw;
-  height: 3vw;
-  border-radius: 1.5vw;
+  height: 3.2em;
+  border-radius: 2em;
   margin: 2em 3em;
 }
   
@@ -181,7 +183,7 @@ img {
 	height: min-content;
 	width: max-content;
 	white-space: nowrap;
-	margin: 0.75vw .5vw;
+	margin: 1.5vh .5vw;
 }
 
 footer {
