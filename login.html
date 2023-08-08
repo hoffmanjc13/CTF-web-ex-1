@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
-  <title>Test CTF Challenge</title>
+  <title>TGG - Login Success</title>
   <link rel = "stylesheet"
     type = "text/css"
     href = "stylesheet.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 
 <body>
@@ -13,32 +14,36 @@
 	</div>
   </header>
 
-	<script>
-		function login_insecure() {
-			let username = document.getElementById("usr").value;
-			let password = document.getElementById("pwd").value;
-			if (username === "HamseyTheHammy" && password === "s0rb3t") {
-				window.location.href = "login.html";
-			} else {
-				var hidd = document.getElementById("hidden");
-				hidd.style.display = "block";
-			}
+	<div class="login-form" id="file-list">
+		<h2 id="sucess-message">Login Sucess!</h2>
+		<div class="file-entry">
+			<h3>Flag: "Found the secret"</h3>
+		</div>
+		<div class="file-entry">
+			<img src='excel.png' width="30" height="30" />
+			<h3>f119_lead_the_fleet_data.xlsx</h3>
+		</div>
+		<div class="file-entry">
+			<img src='word.png' width="30" height="30" />
+			<h3>f135_coatings.docx</h3>
+		</div>
+		<div class="file-entry">
+			<img src='png.png' width="30" height="30" />
+			<h3>ge9x_combustor_drawing.png</h3>
+		</div>
+		<div class="file-entry">
+			<img src='solidworks part.png' width="30" height="30" />
+			<h3>v2500_compressor_vane.sldprt</h3>
+		</div>
+		<div class="file-entry">
+			<img src='solidworks assembly.png' width="30" height="30" />
+			<h3>v2500_turbine.sldasm</h3>
+		</div>
+    </div>
 
-		}
-	</script>
 
-	<div class="login-form">
-		<h1>Login Sucess!</h1>
-        	<h2>Flag: "Found the secret"</h2>
-		<h2>f119_lead_the_fleet_data.xlsx</h2>
-		<h2>f135_coatings.docx</h2>
-		<h2>ge9x_combustor_drawing.png</h2>
-		<h2>v2500_compressor_vane.sldprt</h2>
-		<h2>v2500_turbine.sldasm</h2>
-    	</div>
-
-	<footer id='footer' style="background-color: #10a3a2>
-		<p>Made by Julia Hoffman | . All rights reserved.</p>
+	<footer id='footer' style="background-color: #10a3a2">
+		<p>Made by Julia Hoffman | &copy2023 The Golden Goose Restaurant Corp. All rights reserved.</p>
 	</footer>
 	
 </body>

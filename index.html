@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <head>
-  <title>Hah</title>
+  <title>TGG - Login</title>
   <link rel = "stylesheet"
     type = "text/css"
     href = "stylesheet.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 
 <body style="background-color: #E6E6EC">
@@ -14,18 +15,57 @@
 	</div>
   </header>
   
+  <script>
+	function handle_creds_check() {
+		// obviously this isn't typical. But you're not gonna be able to log in normally for the sake of the challenge  >:P
+		
+		var usr = document.getElementById('usr').value;
+		var pwd = document.getElementById('pwd').value;
+		
+		if (usr == "") {
+		document.getElementById("error-text").textContent = "Please fill out all fields";
+		
+		document.getElementById('usr').style.border = "1px solid red";
+		document.getElementById('usr').style.setProperty("--c", "red")
+		document.getElementById('usr').style.backgroundColor = "#ff9999";
+		}
+		
+		if (pwd == "") {
+		document.getElementById("error-text").textContent = "Please fill out all fields";
+		
+		document.getElementById('pwd').style.border = "1px solid red";
+		document.getElementById('pwd').style.setProperty("--c", "red")
+		document.getElementById('pwd').style.backgroundColor = "#ff9999";
+		}
+		
+		if (usr == "" || pwd == "") return;
+		
+		document.getElementById("error-text").textContent = "Incorrect Credentials";
+	}
+	
+	function reset_style(input_box) {
+		input_box.style.border = "1px solid white";
+		input_box.style.backgroundColor = "white";
+		input_box.style.Color = "black";
+		input_box.style.setProperty("--c", "#8F8F90")
+	}
+	
+  </script>
+  
   <div class="login-form">
-	  <form action="questionnaire.html">
-	    <input class="login-field" type="text" name="usr" placeholder="Username" required>
+		<h2>Login</h2>
+
+		<label class="hidden" id="error-text"></label>
+	  
+		<input class="login-field" type="text" id="usr" placeholder="Username" required onInput="reset_style(this)">
 		
-		<input class="login-field" type="password" name="pwd" placeholder="Password" required>
+		<input class="login-field" type="password" id="pwd" placeholder="Password" required onInput="reset_style(this)">
 		
-	    <input class="login-button" type="submit" value="LOGIN">
-	  </form>
-	  <a href="passwordreset.html">Forgot your password?</a>
+		<input class="login-button" type="submit" value="LOGIN", onclick="handle_creds_check()">
+		<p id="password-reset"><a href="passwordreset.html">Forgot your password?</a></p>
   </div>
   
   <footer id='footer' style="background-color: #10a3a2">
-	<p>Made by Julia Hoffman | ©2023 JH Aerospace. All rights reserved.</p>
+	<p>Made by Julia Hoffman | &copy2023 The Golden Goose Restaurant Corp. All rights reserved.</p>
   </footer>
 </body>
